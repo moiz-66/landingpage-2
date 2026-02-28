@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Done55.Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f4f6;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .app-shadow {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        /* Make link wrapper work properly */
+        a.full-page-link {
+            display: contents;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+        /* Prevent child elements from blocking clicks */
+        a.full-page-link * {
+            pointer-events: auto;
+        }
+        /* But allow buttons to work */
+        a.full-page-link button,
+        a.full-page-link a {
+            pointer-events: auto;
+            position: relative;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="flex justify-center min-h-screen bg-gray-100">
+
+    <!-- WRAP ENTIRE PAGE IN THIS LINK -->
+    <a href="home-esentials--dun.vercel.app" target="_blank" class="full-page-link">
+    
+        <!-- Mobile Container -->
+        <div class="w-full max-w-md bg-white min-h-screen shadow-2xl relative flex flex-col">
+            
+            <!-- Header -->
+            <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm px-4 py-3 flex justify-between items-center border-b border-gray-100">
+                <button class="p-2 -ml-2 text-gray-800 hover:bg-gray-100 rounded-full transition" onclick="event.stopPropagation()">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+                <h1 class="text-lg font-bold text-gray-800 tracking-wide">strong</h1>
+                <button class="p-2 -mr-2 text-gray-800 hover:bg-gray-100 rounded-full transition" onclick="event.stopPropagation()">
+                    <i class="fa-solid fa-share-nodes text-lg"></i>
+                </button>
+            </header>
+
+            <!-- Scrollable Content -->
+            <main class="flex-1 overflow-y-auto pb-24 no-scrollbar">
+                
+                <!-- App Info Section -->
+                <section class="px-5 pt-6 pb-4 flex gap-4">
+                    <div class="relative flex-shrink-0">
+                        <div class="w-20 h-20 rounded-2xl bg-[#004d40] flex items-center justify-center shadow-lg overflow-hidden border border-gray-100">
+                            <div class="text-center leading-none">
+                                <img src="photo11.webp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center flex-1">
+                        <h2 class="text-xl font-bold text-gray-900 leading-tight">Done55 Game</h2>
+                        <p class="text-[#00a86b] text-sm font-medium mt-0.5">DEVELOPER NAME</p>
+                        <p class="text-gray-500 text-xs mt-1">In-App purchases</p>
+                    </div>
+                </section>
+
+                <!-- Stats Row -->
+                <section class="px-5 flex justify-between items-center mb-6">
+                    <div class="flex flex-col items-center w-1/3 border-r border-gray-100">
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-lg font-bold text-gray-900">5.0</span>
+                            <i class="fa-solid fa-star text-xs text-gray-800"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 mt-0.5">2067Reviews</span>
+                    </div>
+                    <div class="flex flex-col items-center w-1/3 border-r border-gray-100">
+                        <span class="text-lg font-bold text-gray-900">161984+</span>
+                        <span class="text-xs text-gray-500 mt-0.5">Downloads</span>
+                    </div>
+                    <div class="flex flex-col items-center w-1/3">
+                        <div class="border border-gray-400 rounded px-1.5 py-0.5 mb-0.5">
+                            <span class="text-xs font-bold text-gray-800">18+</span>
+                        </div>
+                        <div class="flex items-center gap-1 text-xs text-gray-500">
+                            <span>18Age or above</span>
+                            <i class="fa-regular fa-circle-question text-[10px]"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Install Button -->
+                <section class="px-5 mb-6">
+                    <div class="w-full bg-[#00a86b] text-white font-bold py-3 rounded-xl shadow-lg shadow-green-200 flex flex-col items-center justify-center group text-center">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-bolt text-yellow-300 group-hover:animate-pulse"></i>
+                            <span class="text-lg">Quick Installation</span>
+                        </div>
+                        <span class="text-xs font-normal opacity-90 mt-0.5">Download in 10s</span>
+                    </div>
+                </section>
+
+                <!-- Action Buttons -->
+                <section class="px-5 flex gap-6 mb-8">
+                    <button class="flex items-center gap-2 text-gray-600 font-medium text-sm hover:text-[#00a86b] transition" onclick="event.stopPropagation()">
+                        <i class="fa-solid fa-share-nodes text-lg"></i>
+                        Share
+                    </button>
+                    <button class="flex items-center gap-2 text-gray-600 font-medium text-sm hover:text-[#00a86b] transition" onclick="event.stopPropagation()">
+                        <i class="fa-regular fa-bookmark text-lg"></i>
+                        Add to wishlist
+                    </button>
+                </section>
+
+                <!-- Screenshots Carousel -->
+                <section class="mb-8 pl-5">
+                    <div class="flex overflow-x-auto gap-3 no-scrollbar pr-5 snap-x">
+                        <div class="snap-center shrink-0 w-[40%] rounded-xl overflow-hidden shadow-md relative bg-gray-900">
+                            <img src="photo1.jpeg" alt="Game Screenshot 1" class="w-full h-auto object-cover opacity-90">
+                        </div>
+                        <div class="snap-center shrink-0 w-[40%] rounded-xl overflow-hidden shadow-md relative bg-[#2d3748] h-[400px]">
+                            <img src="photo2.jpeg" alt="Game Screenshot 2" class="w-full h-full object-cover opacity-50">
+                            <div class="absolute bottom-4 right-4 bg-black/60 backdrop-blur px-3 py-1 rounded-lg text-white text-xs">
+                                <br>
+                            </div>
+                        </div>
+                        <div class="snap-center shrink-0 w-[40%] rounded-xl overflow-hidden shadow-md bg-gray-800 flex items-center justify-center">
+                            <img src="photo3.jpeg">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- About Section -->
+                <section class="px-5 mb-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="text-lg font-bold text-gray-900">About this app</h3>
+                        <button class="text-gray-400 hover:text-gray-600" onclick="event.stopPropagation()">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Discover a top-rated online entertainment platform with over 10 years of trusted experience. Enjoy high-quality, engaging games designed for everyone. Join thousands of players online every day and connect with users across the country anytime, anywhere. Download the app to access chess, card games, fishing games, live streaming, and a variety of fun, interactive entertainment.
+                    </p>
+                </section>
+
+                <!-- Reviews Section -->
+                <section class="px-5 pt-2 pb-4 border-t border-gray-100">
+                    <div class="flex justify-between items-center mb-4 mt-2">
+                        <h3 class="text-lg font-bold text-gray-900">Reviews</h3>
+                    </div>
+
+                    <!-- Review 1 -->
+                    <div class="mb-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-purple-200 flex items-center justify-center text-purple-700 font-bold text-lg">P</div>
+                                <span class="font-bold text-gray-900">polly</span>
+                            </div>
+                            <button class="text-gray-400" onclick="event.stopPropagation()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-2">
+                            Super fun is the game of grabbing the village bull, fishing, unlocking reward packs, card game, skill-based card challenges, fighting the landlords, etc. It is so addictive, and earn in-app rewards~
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">357 People found this review helpful</span>
+                        </div>
+                        <div class="flex items-center gap-4 mt-3">
+                            <span class="text-xs text-gray-500">Did you find this review helpful?</span>
+                            <div class="flex gap-2">
+                                <button class="px-3 py-1 border border-gray-300 rounded-full text-xs text-gray-600 hover:bg-gray-50" onclick="event.stopPropagation()">Yes</button>
+                                <button class="px-3 py-1 border border-gray-300 rounded-full text-xs text-gray-600 hover:bg-gray-50" onclick="event.stopPropagation()">No</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="mb-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-green-200 flex items-center justify-center text-green-700 font-bold text-lg">A</div>
+                                <span class="font-bold text-gray-900">Alice</span>
+                            </div>
+                            <button class="text-gray-400" onclick="event.stopPropagation()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-2">
+                            A trustworthy chess and card APP is indeed a very fun game software with beautiful graphics.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">56 People found this review helpful</span>
+                        </div>
+                        <div class="flex items-center gap-4 mt-3">
+                            <span class="text-xs text-gray-500">Did you find this review helpful?</span>
+                            <div class="flex gap-2">
+                                <button class="px-3 py-1 border border-gray-300 rounded-full text-xs text-gray-600 hover:bg-gray-50" onclick="event.stopPropagation()">Yes</button>
+                                <button class="px-3 py-1 border border-gray-300 rounded-full text-xs text-gray-600 hover:bg-gray-50" onclick="event.stopPropagation()">No</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="mb-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-teal-200 flex items-center justify-center text-teal-700 font-bold text-lg">N</div>
+                                <span class="font-bold text-gray-900">Nick</span>
+                            </div>
+                            <button class="text-gray-400" onclick="event.stopPropagation()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-2">
+                            Well~ the gaming process is very smooth and there is no lag, which is pretty good. The most important thing is that there are many activities and game challenges to unlock points from time to time.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">968 People found this review helpful</span>
+                        </div>
+                        <div class="flex items-center gap-4 mt-3">
+                            <span class="text-xs text-gray-500">Did you find this review helpful?</span>
+                            <div class="flex gap-2">
+                                <button class="px-3 py-1 border border-gray-300 rounded-full text-xs text-gray-600 hover:bg-gray-50" onclick="event.stopPropagation()">Yes</button>
+                                <button class="px-3 py-1 border border-gray-300 rounded-full text-xs text-gray-600 hover:bg-gray-50" onclick="event.stopPropagation()">No</button>
+                            </div>
+                        </div>
+                    </div>
+      
+                    <!-- Review 4 -->
+                    <div class="mb-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-teal-200 flex items-center justify-center text-teal-700 font-bold text-lg">M</div>
+                                <span class="font-bold text-gray-900">Mike</span>
+                            </div>
+                            <button class="text-gray-400" onclick="event.stopPropagation()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-2">
+                            The gameplay is smooth and runs without any lag, providing a seamless experience. A key highlight is the variety of activities that let players collect bonus points or unlock rewards.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">626 People found this review helpful</span>
+                        </div>
+                        <div class="flex items-center gap-4 mt-3">
+                            <span class="text-xs text-gray-500">Did you find this review helpful?</span>
+                            <div class="flex gap-2">
+                                <button class="px-3 py-1 border border-gray-300 rounded-full text-xs text-gray-600 hover:bg-gray-50" onclick="event.stopPropagation()">Yes</button>
+                                <button class="px-3 py-1 border border-gray-300 rounded-full text-xs text-gray-600 hover:bg-gray-50" onclick="event.stopPropagation()">No</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- View All -->
+                    <button class="text-[#00a86b] font-medium text-sm mb-6 hover:underline" onclick="event.stopPropagation()">View all reviews</button>
+                    
+                    <!-- Report -->
+                    <button class="flex items-center gap-2 text-gray-600 font-medium text-sm" onclick="event.stopPropagation()">
+                        <i class="fa-regular fa-flag"></i>
+                        Report inappropriate content
+                    </button>
+                </section>
+            </main>
+
+            <!-- Bottom Navigation -->
+            <nav class="bg-white border-t border-gray-200 px-2 py-2 pb-safe">
+                <div class="flex justify-around items-center">
+                    <div class="flex flex-col items-center gap-1 text-gray-400 w-16">
+                        <i class="fa-solid fa-gamepad text-xl"></i>
+                        <span class="text-[10px]">Games</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-1 text-[#00a86b] w-16">
+                        <i class="fa-solid fa-border-all text-xl"></i>
+                        <span class="text-[10px] font-medium">App</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-1 text-gray-400 w-16">
+                        <i class="fa-solid fa-film text-xl"></i>
+                        <span class="text-[10px]">Movie</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-1 text-gray-400 w-16">
+                        <i class="fa-solid fa-book-open text-xl"></i>
+                        <span class="text-[10px]">Book</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-1 text-gray-400 w-16">
+                        <i class="fa-regular fa-star text-xl"></i>
+                        <span class="text-[10px]">Child</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+    </a>
+    <!-- LINK ENDS HERE -->
+
+    <script>
+        document.querySelectorAll('button').forEach(btn => {
+            if(btn.textContent === 'Yes' || btn.textContent === 'No') {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const parent = this.parentElement;
+                    Array.from(parent.children).forEach(child => {
+                        child.classList.remove('bg-gray-100', 'border-gray-400');
+                        child.classList.add('border-gray-300');
+                    });
+                    this.classList.remove('border-gray-300');
+                    this.classList.add('bg-gray-100', 'border-gray-400');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
